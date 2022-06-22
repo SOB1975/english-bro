@@ -1,0 +1,206 @@
+/*Reset defolt style and normalize element============================*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+ u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video, button, mark{
+   margin: 0;
+   padding: 0;
+   border: 0;
+   vertical-align: baseline;
+   margin-block-start: 0;
+   margin-block-end: 0;
+   margin-inline-start: 0;
+   margin-inline-end: 0;
+   padding-inline-start: 0px;
+   box-sizing: border-box;
+   text-decoration: none;
+   background-color: transparent;
+}
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+   display: block;
+}
+body {
+   line-height: 1;
+}
+ol, ul {
+   list-style: none;
+}
+blockquote, q {
+   quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+   content: '';
+   content: none;
+}
+table {
+   border-collapse: collapse;
+   border-spacing: 0;
+}
+body {
+   font: 400 16px/1.5 'Roboto';
+   min-width: 340px;
+   padding: 0 15px;
+   background-color: var(--color_baground);
+   scroll-behavior: smooth;
+}
+mark {
+   color: var(--color_secondary);
+}
+a {
+   color: #333;
+}
+.container {
+   max-width: 1200px;
+   margin: 0 auto;
+}
+.section-1,
+.section-2,
+.section-3,
+.section-4,
+.section-5,
+.section-6 {
+   contain: layout paint;
+}
+::-webkit-scrollbar {
+   width: 8px;
+   height: 4px;
+}
+::-webkit-scrollbar-track {
+   background-color: transparent;
+}
+::-webkit-scrollbar-thumb {
+   border-radius: 10px;
+   background: #cac8c8;
+}
+
+
+/*Variables project==========================================*/
+:root {
+   /* Color theme*/
+   --color_base:                  #ffff;
+   --color_primary:               #333;
+   --color_secondary:             #EF1019;
+   --color_baground:              #F2F2F2;
+   --color_grey:                  #9C9797;
+
+   /* Color btn*/
+   --color_btn_primary:           #242323;
+   --color_btn_primary_hover:     #EF1019;
+   --color_btn_primary_border:    #242323;
+   --color_btn_secondary:         #242323;
+   --color_btn_secondary_hover:   #EF1019;
+   --color_btn_secondary_border:  #242323;
+
+  /* Color text*/
+   --color_title:                 #24292f;
+   --color_subtitle:              #57606a;
+   --color_paragraf:              #24292f;
+
+   /* Text fonts*/
+   --text_title:               600 22px/1.3 'Roboto';
+   --text_title_2:             600 18px/1.3 'Roboto';
+   --text_title_3:             600 18px/1.3 'Roboto';
+   --text_paragraf:            400 16px/1.5 'Roboto';
+   --text_paragraf_2:          400 14px/1.5 'Roboto';
+
+   --text_bullet:              400 16px/1.5 'Roboto';
+   --text_nav-item:            400 18px/1.5 'Roboto';
+   --text_tag:                 400 14px/1.3 'Roboto';
+   --text_btn:                 500 16px/1.5 'Roboto';
+   --text_card_level:          400 16px/1.5 'Roboto';
+
+   --text_price_title:         400 20px/1.3 'Roboto';
+   --text_price_value:         500 20px/1.5 'Roboto';
+   --text_price_month:         400 15px/1.5 'Roboto';
+
+   /* Radius */
+   --radius:                   12px;
+   --radius_tag:               50px;
+   --radius_card:              12px;
+}
+
+
+
+@media (min-width: 576px) {
+   :root {
+      --text_title:               600 24px/1.3 'Roboto';
+      --text_paragraf:            400 18px/1.5 'Roboto';
+
+      --text_price_title:         400 22px/1.3 'Roboto';
+      --text_price_value:         500 22px/1.5 'Roboto';
+      --text_price_month:         400 16px/1.5 'Roboto';
+   }
+}
+@media (min-width: 768px) {
+   :root {
+      --text_title:               600 28px/1.3 'Roboto';
+      --text_title_3:             600 20px/1.3 'Roboto';
+      --text_paragraf:            400 19px/1.5 'Roboto';
+      --text_paragraf_2:          400 16px/1.5 'Roboto';
+      --text_bullet:              400 18px/1.5 'Roboto';
+   }
+}
+@media (min-width: 992px) {
+   :root {
+      --text_title:               600 32px/1.3 'Roboto';
+      --text_title_2:             600 20px/1.3 'Roboto';
+      --text_title_3:             600 22px/1.3 'Roboto';
+      --text_paragraf:            400 20px/1.5 'Roboto';
+      --text_paragraf_2:          400 18px/1.5 'Roboto';
+      --text_tag:                 400 17px/1.3 'Roboto';
+
+      --text_price_title:         400 26px/1.3 'Roboto';
+      --text_price_value:         500 26px/1.5 'Roboto';
+      --text_price_month:         400 20px/1.5 'Roboto';
+   }
+}
+
+@media (min-width: 1200px) {
+   :root {
+      --text_title:               600 36px/1.3 'Roboto';
+      --text_title_2:             600 22px/1.3 'Roboto';
+      --text_title_3:             600 24px/1.3 'Roboto';
+      --text_paragraf:            400 22px/1.5 'Roboto';
+      --text_paragraf_2:          400 20px/1.5 'Roboto';
+      --text_bullet:              400 20px/1.5 'Roboto';
+      --text_tag:                 400 18px/1.3 'Roboto';
+   }
+}
+
+
+/*Add local fonts==========================================*/
+@font-face {
+   font-display: swap;
+   font-family: 'Roboto';
+   font-style: normal;
+   font-weight: 400;
+   src:    url('/fonts/roboto-v30-latin_cyrillic-regular.woff2') format('woff2'),
+           url('/fonts/roboto-v30-latin_cyrillic-regular.woff') format('woff');
+}
+@font-face {
+   font-display: swap;
+   font-family: 'Roboto';
+   font-style: normal;
+   font-weight: 500;
+   src:    url('/fonts/roboto-v30-latin_cyrillic-500.woff2') format('woff2'),
+           url('/fonts/roboto-v30-latin_cyrillic-500.woff') format('woff');
+}
+@font-face {
+   font-display: swap;
+   font-family: 'Roboto';
+   font-style: normal;
+   font-weight: 700;
+   src:    url('/fonts/roboto-v30-latin_cyrillic-700.woff2') format('woff2'),
+           url('/fonts/roboto-v30-latin_cyrillic-700.woff') format('woff');
+}

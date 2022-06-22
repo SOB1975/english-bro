@@ -1,0 +1,45 @@
+/* Properties section 5 ================================ */
+.section-5 {
+   margin-bottom: 50px;
+}
+
+.section-5__header {
+   display: flex;
+   flex-flow: column;
+   margin-bottom: 30px;
+   padding: 0 15px;
+   gap: 15px;
+}
+.section-5__price-container {
+   display: flex;
+   flex-flow: column;
+   justify-content: center;
+   gap: 30px;
+}
+
+
+@media (min-width: 576px) {
+   .section-5__header {
+      align-items: center;
+   }
+}
+
+@media (min-width: 768px) {
+   .section-5__header {
+      align-items: center;
+   }
+   .section-5__price-container {
+      flex-flow: row wrap;
+      align-items: flex-end;
+      gap: 30px;
+   }
+}
+
+@media (min-width: 992px) {
+   .section-5 {
+      margin-bottom: 100px;
+   }
+   .section-5__header {
+      margin-bottom: 50px;
+   }
+}

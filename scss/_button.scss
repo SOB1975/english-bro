@@ -1,0 +1,84 @@
+/* Button box properties =========================================*/
+.button-box {
+   display: flex;
+   flex-flow: column;
+   align-items: center;
+   width: 100%;
+   gap: 10px;
+}
+/* Button primary */
+.btn-primary {
+   cursor: pointer;
+   width: 280px;
+   height: 55px;
+   font: 500 16px/1.5 'Roboto';
+   border-radius: var(--radius);
+   border-width: 1px;
+   border-style: solid;
+   color: var(--color_base);
+   border-color: var(--color_primary);
+   background-color: var(--color_btn_primary);
+}
+.btn-primary:hover {
+   border-color: var(--color_btn_primary_hover);
+   background-color: var(--color_btn_primary_hover);
+}
+.btn-primary--width{
+   width: 100%;
+}
+.btn-primary--price {
+   color: var(--color_btn_primary);
+   background-color: var(--color_base);
+}
+.btn-primary--price:hover {
+   color: var(--color_base);
+}
+/* Button secondary */
+.btn-secondary {
+   cursor: pointer;
+   width: 280px;
+   height: 55px;
+   font: 500 16px/1.5 'Roboto';
+   border-radius: var(--radius);
+   border-width: 1px;
+   border-style: solid;
+   color: var(--color_primary);
+   border-color: var(--color_btn_secondary);
+}
+.btn-secondary:hover {
+   color: var(--color_base);
+   border-color: var(--color_btn_secondary_hover);
+   background-color: var(--color_btn_secondary_hover);
+}
+
+
+
+@media (min-width: 576px) {
+   .button-box--align {
+      align-items: flex-start;
+   }
+   .button-box--card {
+      flex-flow: row;
+      order: 2;
+   }
+   .btn--card {
+      width: 150px
+   }
+}
+@media (min-width: 768px) {
+   .btn-primary--sm {
+      width: 130px;
+      height: 45px;
+   }
+   .btn-secondary--display {
+      display: none;
+   }
+}
+@media (min-width: 992px) {
+   .btn-primary--width {
+      width: 210px;
+   }
+  .button-box--price {
+      align-items: flex-start;
+   }
+}

@@ -1,0 +1,68 @@
+/* Properties text===========================================*/
+.title {
+   font: var(--text_title);
+}
+.title-2 {
+   font: var(--text_title_2);
+}
+.title-3 {
+   font: var(--text_title_3);
+}
+.paragraf {
+   font: var(--text_paragraf);
+}
+.paragraf-2 {
+   font: var(--text_paragraf_2);
+}
+
+
+.title--width {
+   max-width: 250px
+}
+.title-3--white {
+   color: var(--color_base);
+}
+
+.paragraf--margin {
+   margin-bottom: 30px;
+}
+.paragraf--white {
+   color: var(--color_base);
+}
+.paragraf-size {
+   font-size: 16px;
+}
+
+
+@media (min-width: 576px) {
+   .title--align {
+      text-align: center;
+   }
+   .title--width {
+      max-width: 300px
+   }
+   .paragraf--align {
+      text-align: center;
+   }
+}
+
+@media (min-width: 768px) {
+   .title--width {
+      max-width: 350px
+   }
+   .paragraf--width {
+      max-width: 600px
+   }
+   .paragraf-size {
+      font-size: 18px;
+   }
+}
+
+@media (min-width: 992px) {
+   .title--width {
+      max-width: 450px
+   }
+   .paragraf-size {
+      font-size: 20px;
+   }
+}
