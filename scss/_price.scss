@@ -110,6 +110,11 @@
    .price {
       padding: 30px;
    }
+   .price__palce,
+   .price__limit {
+   font: 400 18px/1.5 'Roboto';
+   }
+
    .price__list {
       gap: 50px;
    }

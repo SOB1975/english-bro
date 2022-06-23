@@ -14,7 +14,10 @@
 .paragraf-2 {
    font: var(--text_paragraf_2);
 }
-
+.desc {
+   font: 400 14px/1.5 'Roboto';
+   color: var(--color_grey);
+}
 
 .title--width {
    max-width: 250px

@@ -23,8 +23,15 @@
    border-color: var(--color_btn_primary_hover);
    background-color: var(--color_btn_primary_hover);
 }
-.btn-primary--width{
+.btn-primary--width {
    width: 100%;
+}
+.btn-primary--white {
+   color: var(--color_primary);
+   background-color: var(--color_base);
+}
+.btn-primary--white:hover {
+   color: var(--color_base);
 }
 .btn-primary--price {
    color: var(--color_btn_primary);
@@ -50,7 +57,9 @@
    border-color: var(--color_btn_secondary_hover);
    background-color: var(--color_btn_secondary_hover);
 }
-
+.btn-secondary--width {
+   width: 100%;
+}
 
 
 @media (min-width: 576px) {
