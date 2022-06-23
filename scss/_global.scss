@@ -48,7 +48,7 @@ table {
    border-spacing: 0;
 }
 body {
-   font: 400 16px/1.5 'Roboto';
+   font: normal 400 16px/1.5 'Roboto';
    min-width: 340px;
    padding: 0 15px;
    background-color: var(--color_baground);
@@ -74,7 +74,7 @@ a {
 }
 ::-webkit-scrollbar {
    width: 8px;
-   height: 4px;
+   height: 0px;
 }
 ::-webkit-scrollbar-track {
    background-color: transparent;
@@ -82,6 +82,9 @@ a {
 ::-webkit-scrollbar-thumb {
    border-radius: 10px;
    background: #cac8c8;
+}
+::-webkit-scrollbar:hover {
+   height: 4px;
 }
 
 
@@ -98,6 +101,7 @@ a {
    --color_btn_primary:           #242323;
    --color_btn_primary_hover:     #EF1019;
    --color_btn_primary_border:    #242323;
+
    --color_btn_secondary:         #242323;
    --color_btn_secondary_hover:   #EF1019;
    --color_btn_secondary_border:  #242323;
@@ -108,21 +112,22 @@ a {
    --color_paragraf:              #24292f;
 
    /* Text fonts*/
-   --text_title:               600 22px/1.3 'Roboto';
-   --text_title_2:             600 18px/1.3 'Roboto';
-   --text_title_3:             600 18px/1.3 'Roboto';
-   --text_paragraf:            400 16px/1.5 'Roboto';
-   --text_paragraf_2:          400 14px/1.5 'Roboto';
+   --text_title:               600 clamp(1.37rem, 1.0735rem + 1.3953vw, 2.12rem)/1.3 'Roboto';
+   --text_title_2:             600 clamp(1.12rem, 0.9698rem + 0.7070vw, 1.5rem)/1.3 'Roboto';
+   --text_title_3:             600 clamp(1.12rem, 1.0212rem + 0.4651vw, 1.37rem)/1.3 'Roboto';
 
-   --text_bullet:              400 16px/1.5 'Roboto';
+   --text_paragraf:            400 clamp(1rem, 0.8537rem + 0.6884vw, 1.37rem)/1.5 'Roboto';
+   --text_paragraf_2:          400 clamp(0.87rem, 0.7198rem + 0.7070vw, 1.25rem)/1.5 'Roboto';
+
+   --text_bullet:              400 clamp(1rem, 0.9012rem + 0.4651vw, 1.25rem)/1.5 'Roboto';
+   --text_tag:                 400 clamp(0.93rem, 0.8549rem + 0.3535vw, 1.12rem)/1.1 'Roboto';
+   --text_card_level:          400 clamp(1rem, 0.9012rem + 0.4651vw, 1.25rem)/1.5 'Roboto';
    --text_nav-item:            400 18px/1.5 'Roboto';
-   --text_tag:                 400 14px/1.3 'Roboto';
    --text_btn:                 500 16px/1.5 'Roboto';
-   --text_card_level:          400 16px/1.5 'Roboto';
 
-   --text_price_title:         400 20px/1.3 'Roboto';
-   --text_price_value:         500 20px/1.5 'Roboto';
-   --text_price_month:         400 15px/1.5 'Roboto';
+   --text_price_title:         400 clamp(1.25rem, 1.1037rem + 0.6884vw, 1.62rem)/1.3 'Roboto';
+   --text_price_value:         500 clamp(1.25rem, 1.1037rem + 0.6884vw, 1.62rem)/1.5 'Roboto';
+   --text_price_month:         400 clamp(0.93rem, 0.8035rem + 0.5953vw, 1.25rem)/1.5 'Roboto';
 
    /* Radius */
    --radius:                   12px;
@@ -130,53 +135,6 @@ a {
    --radius_card:              12px;
 }
 
-
-
-@media (min-width: 576px) {
-   :root {
-      --text_title:               600 24px/1.3 'Roboto';
-      --text_paragraf:            400 18px/1.5 'Roboto';
-
-      --text_price_title:         400 22px/1.3 'Roboto';
-      --text_price_value:         500 22px/1.5 'Roboto';
-      --text_price_month:         400 16px/1.5 'Roboto';
-   }
-}
-@media (min-width: 768px) {
-   :root {
-      --text_title:               600 28px/1.3 'Roboto';
-      --text_title_3:             600 20px/1.3 'Roboto';
-      --text_paragraf:            400 19px/1.5 'Roboto';
-      --text_paragraf_2:          400 16px/1.5 'Roboto';
-      --text_bullet:              400 18px/1.5 'Roboto';
-   }
-}
-@media (min-width: 992px) {
-   :root {
-      --text_title:               600 32px/1.3 'Roboto';
-      --text_title_2:             600 20px/1.3 'Roboto';
-      --text_title_3:             600 22px/1.3 'Roboto';
-      --text_paragraf:            400 20px/1.5 'Roboto';
-      --text_paragraf_2:          400 18px/1.5 'Roboto';
-      --text_tag:                 400 17px/1.3 'Roboto';
-
-      --text_price_title:         400 26px/1.3 'Roboto';
-      --text_price_value:         500 26px/1.5 'Roboto';
-      --text_price_month:         400 20px/1.5 'Roboto';
-   }
-}
-
-@media (min-width: 1200px) {
-   :root {
-      --text_title:               600 36px/1.3 'Roboto';
-      --text_title_2:             600 22px/1.3 'Roboto';
-      --text_title_3:             600 24px/1.3 'Roboto';
-      --text_paragraf:            400 22px/1.5 'Roboto';
-      --text_paragraf_2:          400 20px/1.5 'Roboto';
-      --text_bullet:              400 20px/1.5 'Roboto';
-      --text_tag:                 400 18px/1.3 'Roboto';
-   }
-}
 
 
 /*Add local fonts==========================================*/
