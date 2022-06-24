@@ -1,0 +1,82 @@
+.acordion {
+   display: flex;
+   flex-flow: column;
+   gap: 20px;
+}
+.acordion__item {
+   cursor: pointer;
+   padding: 20px 15px;
+   border-radius: var(--radius);
+   background-color: var(--color_base);
+}
+
+
+.acordion__tittle {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding-right: 10px;
+}
+.acordion__item[open] > .acordion__tittle {
+   margin-bottom: 15px;
+}
+
+
+.acordion__item[open] .acordion__icon {
+   transform: rotate(-45deg);
+   transition: 0.2s;
+}
+.acordion__item:hover .acordion__icon {
+   background-color: var(--color_secondary);
+}
+.acordion__icon {
+   position: relative;
+   display: inline-flex;
+   justify-content: center;
+   align-items: center;
+   min-width: 34px;
+   min-height: 34px;
+   border-radius: 50px;
+   background-color: var(--color_primary);
+   transition: 0.2s;
+}
+.acordion__line {
+   position: absolute;
+   display: inline-block;
+   width: 20px;
+   height: 2px;
+   border-radius: 2px;
+   background-color: var(--color_base);
+}
+.acordion__line-2 {
+   transform: rotate(90deg);
+}
+
+@media (min-width: 576px) {
+   .acordion__icon {
+      min-width: 44px;
+      min-height: 44px;
+   }
+
+   .acordion__line {
+      width: 25px;
+      height: 2px;
+   }
+}
+
+@media (min-width: 768px) {
+   .acordion__item {
+      padding: 25px 20px;
+   }
+}
+@media (min-width: 1200px) {
+   .acordion__icon {
+      min-width: 48px;
+      min-height: 48px;
+   }
+
+   .acordion__line {
+      width: 30px;
+      height: 2px;
+   }
+}

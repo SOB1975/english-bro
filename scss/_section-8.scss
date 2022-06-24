@@ -1,0 +1,23 @@
+/* Properties section 8 ================================ */
+.section-8 {
+   margin-bottom: 50px;
+
+}.section-8__header {
+   display: flex;
+   flex-flow: column;
+   margin-bottom: 30px;
+   padding: 0 15px;
+   gap: 15px;
+}
+
+@media (min-width: 576px) {
+   .section-8__header {
+      align-items: center;
+   }
+}
+
+@media (min-width: 992px) {
+   .section-8__header {
+      margin-bottom: 50px;
+   }
+}

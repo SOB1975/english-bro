@@ -30,9 +30,6 @@
    border-radius: var(--radius);
    background-color: var(--color_primary);
 }
-.paragraf-2 {
-   color: var(--color_grey);
-}
 .section-6__video-box {
    position: absolute;
    top: 0;
@@ -53,8 +50,11 @@
    .section-6__header {
       margin-bottom: 50px;
    }
+   .section-6__fon-box { 
+      padding: 25px;
+   }
    .section-5__fedback-box {
-         justify-content: center;
+      justify-content: center;
    }
 }
 
