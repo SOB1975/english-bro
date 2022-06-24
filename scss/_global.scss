@@ -1,4 +1,9 @@
 /*Reset defolt style and normalize element============================*/
+@charset "UTF-8";
+@viewport {
+  width: device-width;
+  initial-scale: 1;
+}
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -15,6 +20,7 @@ time, mark, audio, video, button, mark{
    margin: 0;
    padding: 0;
    border: 0;
+   font-size: 100%;
    vertical-align: baseline;
    margin-block-start: 0;
    margin-block-end: 0;
@@ -26,7 +32,7 @@ time, mark, audio, video, button, mark{
    background-color: transparent;
 }
 article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
+footer, header, hgroup, menu, nav, section, main {
    display: block;
 }
 
@@ -46,11 +52,6 @@ input[type="email" i] {
    text-indent: 0px;
    text-shadow: none;
 }
-
-
-body {
-   line-height: 1;
-}
 ol, ul {
    list-style: none;
 }
@@ -62,10 +63,27 @@ q:before, q:after {
    content: '';
    content: none;
 }
+:before,
+:after {
+  box-sizing: border-box;
+}
 table {
    border-collapse: collapse;
    border-spacing: 0;
 }
+html {
+   font: normal 400 16px/1.5 'Roboto';
+   color: var(--color_primary);
+   height: 100%;
+   -webkit-font-smoothing: antialiased;
+   -moz-osx-font-smoothing: grayscale;
+   -ms-text-size-adjust: 100%;
+   -moz-text-size-adjust: 100%;
+   -webkit-text-size-adjust: 100%;
+   -webkit-overflow-scrolling: touch;
+   -ms-touch-action: manipulation;
+   touch-action: manipulation;
+ }
 body {
    font: normal 400 16px/1.5 'Roboto';
    color: var(--color_primary);
@@ -79,6 +97,10 @@ mark {
 }
 a {
    color: #333;
+}
+b,
+strong {
+  font-weight: 700;
 }
 .container {
    max-width: 1200px;

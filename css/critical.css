@@ -1,4 +1,16 @@
 /*Reset defolt style and normalize element============================*/
+@-ms-viewport {
+  width: device-width;
+  initial-scale: 1;
+}
+@-o-viewport {
+  width: device-width;
+  initial-scale: 1;
+}
+@viewport {
+  width: device-width;
+  initial-scale: 1;
+}
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -15,6 +27,7 @@ time, mark, audio, video, button, mark {
   margin: 0;
   padding: 0;
   border: 0;
+  font-size: 100%;
   vertical-align: baseline;
   -webkit-margin-before: 0;
           margin-block-start: 0;
@@ -33,7 +46,7 @@ time, mark, audio, video, button, mark {
 }
 
 article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
+footer, header, hgroup, menu, nav, section, main {
   display: block;
 }
 
@@ -54,10 +67,6 @@ input[type=email i] {
   text-shadow: none;
 }
 
-body {
-  line-height: 1;
-}
-
 ol, ul {
   list-style: none;
 }
@@ -72,9 +81,29 @@ q:before, q:after {
   content: none;
 }
 
+:before,
+:after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 table {
   border-collapse: collapse;
   border-spacing: 0;
+}
+
+html {
+  font: normal 400 16px/1.5 "Roboto";
+  color: var(--color_primary);
+  height: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -webkit-overflow-scrolling: touch;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
 }
 
 body {
@@ -92,6 +121,11 @@ mark {
 
 a {
   color: #333;
+}
+
+b,
+strong {
+  font-weight: 700;
 }
 
 .container {
@@ -323,7 +357,7 @@ a {
 }
 
 .btn-primary--price {
-  color: var(--color_btn_primary);
+  color: var(--color_primary);
   background-color: var(--color_base);
 }
 
@@ -388,6 +422,10 @@ a {
 @media (min-width: 992px) {
   .btn-primary--width {
     width: 210px;
+  }
+
+  .btn-primary--card {
+    width: 150px;
   }
 
   .button-box--price {
