@@ -1,0 +1,68 @@
+/* Properties bullet box ========================================*/
+.bullet {
+   display: flex;
+   flex-flow: column;
+   gap: 10px;
+
+   &__item {
+      display: flex;
+      flex-flow: row;
+      align-items: center;
+      gap: 10px;
+      font: var(--text_bullet);
+   }
+   &__item::before {
+      display: inline-block;
+      content: ' ';
+      min-width: 20px;
+      min-height: 20px;
+      background: url(/img/svg/icon_star_24x24.svg);
+      background-size: contain;
+      background-repeat: no-repeat;
+   }
+   &__item--white {
+      color: var(--color_base);
+   }
+}
+.bullet--margin {
+   margin-bottom: 30px;
+}
+
+@media (min-width: 992px) {
+   .bullet {
+      flex-flow: row;
+      justify-content: center;
+   }
+   .bullet--flow {
+      flex-flow: column;
+   }
+}
+@media (min-width: 1200px) {
+   .bullet {
+      gap: 50px;
+   }
+   .bullet--flow {
+      gap: 15px;
+   }
+   .bullet__item {
+      max-width: 360px;
+   }
+   .bullet__item--width {
+      max-width: 100%;
+   }
+   .bullet__item::before {
+      min-width: 24px;
+      min-height: 24px;
+   }
+}
+
+
+/* Properties tag ===============================================*/
+.tag {
+   max-height: 41px;
+   padding: 0.5em 1em;
+   border-radius: var(--radius_tag);
+   background-color: var(--color_baground);
+   font: var(--text_tag);
+   color: var(--color_grey);
+}

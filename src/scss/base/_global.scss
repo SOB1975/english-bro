@@ -1,0 +1,36 @@
+/*Reset defolt style and normalize element============================*/
+
+.container {
+   max-width: 1200px;
+   margin: 0 auto;
+}
+.section-1,
+.section-2,
+.section-3,
+.section-4,
+.section-5,
+.section-6,
+.section-7 {
+   contain: layout paint;
+}
+.underline {
+   text-decoration: underline;
+   cursor: pointer;
+}
+::-webkit-scrollbar {
+   width: 8px;
+   height: 0px;
+}
+::-webkit-scrollbar-track {
+   background-color: transparent;
+}
+::-webkit-scrollbar-thumb {
+   border-radius: 10px;
+   background: #cac8c8;
+}
+::-webkit-scrollbar:hover {
+   height: 4px;
+}
+::-webkit-details-marker {
+   display: none
+}

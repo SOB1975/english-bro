@@ -1,8 +1,0 @@
-User-agent: *
-Disallow: 
-Disallow: /js
-Disallow: /css
-Disallow: /cgi-bin
-Disallow: /admin/
-Host: https://english-bro.com/
-Sitemap: https://english-bro.com/sitemap.xml
