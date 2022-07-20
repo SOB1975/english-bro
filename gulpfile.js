@@ -39,9 +39,9 @@ exports.dev =
    $.task.transfer.js,
    $.task.transfer.vendorJs,
    $.task.transfer.vendorCSS,
-   $.task.transfer.admin,
-   $.task.server);
+   $.task.transfer.admin);
    
+// $.task.server
 /* Запускает продвкшен сборку */
 exports.pub =
    $.gulp.series(
@@ -57,7 +57,10 @@ exports.pub =
    $.task.pub.transfer.vendorJs,
    $.task.pub.transfer.vendorCSS,
    $.task.pub.transfer.admin,
-   $.task.pub.sitemap,
-   $.task.pub.server);
+   $.task.pub.sitemap);
 
+// $.task.pub.server
+   
 exports.zip = $.task.pub.zip;
+
+// Для WP стилили не должны менять название

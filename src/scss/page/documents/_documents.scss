@@ -1,39 +1,39 @@
-.main {
+.doc-main {
    max-width: 1160px;
    margin: 0 auto;
 }
-.header {
+.doc-header {
    margin: 30px 0;
 }
-.section {
+.doc-section {
    margin-bottom: 30px;
 }
 
-.title {
+.doc-title {
    font: 700 25px/1.5 "Roboto";
    color: var(--color_primary);
 }
-.title-2 {
+.doc-title-2 {
    margin-bottom: 10px;
    font: 600 16px/1.5 "Roboto";
    color: var(--color_primary);
 }
-.paragraf {
+.doc-paragraf {
    font: 400 16px/1.5 "Roboto";
    color: var(--color_primary);
    margin-bottom: 5px;
 }
 
-.paragraf-list,
-.paragraf-list__item {
+.doc-paragraf-list,
+.doc-paragraf-list__item {
    list-style-type: disc;
    margin-left: 15px;
 }
-.paragraf-list {
+.doc-paragraf-list {
    margin-bottom: 30px;
 }
 
-.footer {
+.doc-footer {
    width: 100%;
    height: 80px;
 }
