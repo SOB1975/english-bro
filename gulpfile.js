@@ -39,9 +39,9 @@ exports.dev =
    $.task.transfer.js,
    $.task.transfer.vendorJs,
    $.task.transfer.vendorCSS,
-   $.task.transfer.admin);
+   $.task.transfer.admin,
+   $.task.server);
    
-// $.task.server
 /* Запускает продвкшен сборку */
 exports.pub =
    $.gulp.series(
