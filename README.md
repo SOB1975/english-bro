@@ -4,10 +4,10 @@
 <table>
    <tr>
       <td>
-         <img src="public/img/md/pagespeed__mob.png" alt="Картинка мобильного" title="Картинка">
+         <img src="public/img/md/pagespeed_mob" alt="Картинка мобильного" title="Картинка">
       </td>
       <td>
-         <img src="public/img/md/pagespeed__des-1.png" alt="Картинка компьютера" title="Картинка">
+         <img src="public/img/md/pagespeed_des-1.png" alt="Картинка компьютера" title="Картинка">
       </td>
    </tr>
 </table>
